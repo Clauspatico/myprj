@@ -1,0 +1,24 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Lugar</mat-label>
+    <input matInput placeholder="Ciudad o estadio del partido">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Fecha y Hora</mat-label>
+    <input matInput placeholder="Fecha y hora del partido">
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="example-full-width">
+    <mat-label>Equipo Local</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let i of countries" [value]="i.name">{{i.name}} ({{i.confederation}})</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="example-full-width">
+    <mat-label>Equipo Visitante</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let i of countries" [value]="i.name">{{i.name}} ({{i.confederation}})</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-flat-button color="primary" type="submit" class="example-full-width">Guardar</button>
+</form>
+  

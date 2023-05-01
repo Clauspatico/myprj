@@ -1,0 +1,12 @@
+<div>
+  <h2>Partidos Disponibles</h2>
+  <mat-card *ngFor="let i of games">
+    <mat-card-header>
+      <mat-card-title>{{i.countryLocal}} vs {{i.countryVisitor}}</mat-card-title>
+      <mat-card-subtitle>{{i.dateHour}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>Crear una sesión para este partido</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
